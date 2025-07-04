@@ -15,16 +15,16 @@ public class ContactsApplication {
         ApplicationContext context=SpringApplication.run(ContactsApplication.class, args);
         var service=context.getBean(ContactService.class);
 
-        Contact contact=Contact.builder().email("tadija.com").name("tadija").phone("0603366192").build();
-        service.addContact(contact);
-
-        List<Contact> contacts=service.findContactsContaining("");
-        contacts.forEach(System.out::println);
-
-        service.removeContact(contact);
-
-        List<Contact> contacts2=service.findContactsContaining("");
-        contacts2.forEach(System.out::println);
+//        Contact contact=Contact.builder().email("tadija.com").name("tadija").phone("0603366192").build();
+//        service.addContact(contact);
+//
+//        List<Contact> contacts=service.findContactsContaining("");
+//        contacts.forEach(System.out::println);
+//
+//        service.removeContact(contact);
+//
+//        List<Contact> contacts2=service.findContactsContaining("");
+//        contacts2.forEach(System.out::println);
     }
 
 }
